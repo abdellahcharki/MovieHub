@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Movies Hub | <%= pageTitle  %> </title>
+    <link rel="icon" href="/icon/icon.jpg" />
+    <link href="/css/fontawesome.css" rel="stylesheet">
+
+    <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="/css/mdb.css" rel="stylesheet"> 
+    <link href="/css/compiled-4.15.0.min.css" rel="stylesheet"> 
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Movie Hub <i class="far fa-caret-square-right"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+    
+                    <li class="nav-item"><a class="nav-link" href="/contctus">Countct Us</a></li>
+                    <% if (isAdmin) { %>
+                    <li class="nav-item"><a class="nav-link" href="/admin">dashbord</a></li>
+                    <% } %>
+                </ul>
+                <% if (isAdmin) { %>
+                <a href="/upload" class="btn btn-primary my-2 my-sm-0" type="submit">Upload <i    class="fas fa-upload"></i></a>
+                <% } %>
+                <% if (!isUser) { %>
+                <a class="nav-link  nav-link btn btn-outline-success" href="/singup">SingUp <i class="fas fa-user-plus"></i>
+                </a>
+                <a class="nav-link btn btn-success" href="/login">LogIn <i class="fas fa-sign-in-alt"></i> </a>
+                <% } else { %>
+    
+    
+    
+                    <div class="dropdown">
+                        <span class="user-icon dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/profile">profile</a>
+                            <a class="dropdown-item" href="/lib">my Libery</a>
+                            <a class="dropdown-item" href="#">My Boit</a>
+                            <a class="dropdown-item" href="/logout">log out </a>
+                        </div>
+                      </div>
+    
+    
+    
+    
+                <!-- <form action="/logout" method="POST">
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out <i
+                            class="fas fa-sign-out-alt"></i></button>
+                </form> -->
+    
+                <%}%>
+            
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <div class="container">

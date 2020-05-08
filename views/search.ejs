@@ -1,0 +1,33 @@
+<%- include("./components/header")  %>
+
+<%- include("./components/searchbar")  %>
+
+
+
+<!--=============== start result =====================-->
+<div class="row">
+    <div class="col-12">
+<% if (0) { %>
+    <ul class="list-unstyled mt-4">
+        <% for( let i = 0; i < 5; i++ ) { %>
+        <%#  START result showing %>
+        <li class="media  film-search">
+            <img src="./img/default.JPG" width="110" class="mr-3" alt="...">
+            <div class="media-body">
+                <h5 class="mt-0 mb-1 p-2">film name</h5>
+                <p>dist</p>
+                <a href="" class="btn btn-primary abs"><i class="fa fa-caret-right fa-3x"></i></a>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+<% } else { %>
+    <div class="alert alert-danger mt-4"> no match result for <strong><%= query %></strong></div>
+<% }  %>
+    </div>
+    </div>
+
+<!--=============== end result =====================-->
+
+
+<%- include("./components/footer")  %>

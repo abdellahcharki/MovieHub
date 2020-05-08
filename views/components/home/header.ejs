@@ -1,0 +1,63 @@
+<div class="row">
+    <!-- start categore -->
+    <div class="col-4">
+        <div class="row">
+            <% for( let category of categorys ) { %>
+                <a href="/category?category=<%= category %>" style="min-width: 46%; margin:2% ;" class="btn btn-outline-blue p-3"><%= category  %></a>
+            <% } %>
+        </div>
+    </div>
+    <!-- end categore -->
+    <!-- start slider -->
+    <div class="col-8">
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+
+
+
+                    <div class="carousel-item active">
+                        <img src="/1586966282476-film-sofia1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a  class="btn btn-outline-blue">watch</a>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="carousel-item">
+                        <img src="/1586966059956-film-542034594078d8358079600db4e1b18c.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="carousel-item">
+                        <img src="/1586965400991-film-casanegra.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"  data-slide="prev">
+                    <span class="carousel-control-prev-icon"><i class="fas fa-angle-left fa-3x"></i></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span><i class="fas fa-angle-right fa-3x"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->

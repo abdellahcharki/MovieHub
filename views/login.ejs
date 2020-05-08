@@ -1,0 +1,21 @@
+<%- include("./components/header")  %>
+
+
+<div class="row">
+    <div class="col mt-4">
+        <form method="POST" accept="/login">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="exomple@email.com">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="your password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<%- include("./components/footer")  %>

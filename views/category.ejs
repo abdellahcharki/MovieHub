@@ -1,0 +1,25 @@
+<%- include("./components/header")  %> 
+
+
+
+.<div class="row">
+<% if(result.length>0){ %>
+  <% for( let movie of result ) {%>
+        <a href="/movie?mid=<%= movie._id%>" class="col-md-3">
+            <div   style="hieght:360.922px" class="card mb-2">
+                <img style="hieght:100%" class="card-img-top"src="/<%= movie.image_url%>" >
+            </div>
+            <strong><%= movie.title%></strong>
+        </a>
+    <% } %>
+<% } else {%>
+    <div class="alert alert-danger col-12 h1 text-center">
+        no Movie to desply
+    </div>
+<% } %>
+
+</div>
+
+
+
+<%- include("./components/footer")  %> 

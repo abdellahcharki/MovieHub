@@ -1,0 +1,40 @@
+<%- include("./components/header")  %> 
+
+<div class="row mt-4">
+
+    <div class="tab-content" style="width: 100%;" id="myTabContent">
+        <div class="tab-pane fade show active" id="profile">
+            <div class="media mt-4" style="position: relative;">
+                <img style="border-radius: 50%;height: 180px;" src="/<%= user.profilePhoto %>" width="180"   class="mr-3" >
+                <span class="edit-icon"  data-toggle="modal" data-target="#edit-profile"> <i class="fas fa-edit"></i></span>
+
+                    <div class="modal fade" id="edit-profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Change Profile photo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form  enctype="multipart/form-data" action="/profile" method="POST">
+                                <img style="border-radius: 50%;height: 180px;" src="/<%= user.profilePhoto %>" width="180"   class="mr-3" >
+                                    <input type="file" name="profileImgEdit" acepte="imeges/*" >
+                                    <button class="btn btn-primary" type="submit">Edit</button>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="media-body">
+                    <h2 class="mt-0"  ">@<%= user.name %> <span><i class="fas fa-edit"></i></span></h2>
+                    <p> <strong>E-mail : </strong> <%= user.email %> <span><i class="fas fa-edit"></i></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("./components/footer")  %> 

@@ -1,0 +1,26 @@
+<%- include("./components/header")  %>
+<%- include("./components/searchbar")  %>
+
+<%- include("./components/home/header")  %>
+
+<!-- ========================== start film display =========================== -->
+<div class="row">
+    <% for( let category of categorys) { %>
+    <div class="col-12 ">
+        <h3 class="parts"><%= category %> </h3>
+    </div>
+
+    <% for(let item =0 ; item<4;item++){%>
+    <a href="/movie?mid=5e9a0a75b665c01094ae7df0" class="col-md-3">
+        <div class="card mb-2">
+            <img class="card-img-top" src="/1587153525616-film-yema-affiche.jpg">
+        </div>
+        <strong>title rt tr e3</strong>
+    </a>
+    <%}%>
+
+    <% } %>
+</div>
+<!-- ========================== end film display =========================== -->
+
+<%- include("./components/footer")  %>

@@ -1,0 +1,25 @@
+<%- include("./components/header")  %> 
+
+
+
+<div class="row mt-4">
+    <div class="col-4">
+        <h5> <%= film.user%></h5>
+        <hr>
+        <p><strong> by :  </strong> <%= film.user%></p>
+        <p><strong> category :  </strong> <%= film.category %> </p>
+        <p><strong> dist :  </strong> <%= film.disc %></p>
+     
+    </div>
+    <div class="col-8">
+        <video class="film-player" controls>
+            <source src="/<%= film.film_url %>">   
+        </video>
+        <p> <%= film.user%></p> 
+        <p>views : <%= film.viwes%> </p>
+    </div>
+</div
+
+
+
+<%- include("./components/footer")  %> 

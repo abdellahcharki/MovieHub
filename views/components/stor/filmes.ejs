@@ -1,0 +1,23 @@
+<div class="tab-pane fade" id="films">
+    <% if (films.length > 0) { %>
+    <ul class="list-unstyled">
+        <% for( let film of films ) { %>
+            <li class="media mt-3">
+                <img src="/<%= film.image_url %>" width="100" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1"><%= film.name %></h5>
+                    <p class="m-0">Category : <%= film.category %>  </p>
+                    <p class="m-0">By : <%= film.user %></p>
+                    <p class="m-0">Dur : <%= film.dur %></p>
+                    <p class="m-0">disc : <%= film.disc %></p>
+                    <a href="/watch/<%= film._id %>" class="btn btn-primary">watch</a>
+                </div>
+            </li>
+        <% } %>
+    </ul>
+    <% } else{ %>
+        <div class="alert alert-danger mt-4">
+            no filmes to disply
+        </div>
+    <%}%>
+</div>

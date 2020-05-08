@@ -1,0 +1,67 @@
+<%- include("./components/header")  %> 
+
+
+<div class="row mt-4">
+    <div class="col-12">
+        <h1 class="film-title"><%= film.title %></h1>
+    </div>
+    <div class=" col-12 p-4 col-md-4">
+        <img src="/<%= film.image_url %>" style="width: 100%; border-radius: 3px;" alt="">
+    </div>
+    <div class=" col-12 p-4 col-md-8 film-info">
+        <span class="title" >Diescribtion</span>
+        <p class="title-contant" ><%= film.disc %></p>
+        <span class="title" >Category</span>
+        <p class="title-contant" ><%= film.category %></p>
+        <span class="title" >prudaction year</span>
+        <p class="title-contant" ><%= film.yearProduct %></p>
+        <span class="title" >Statistic</span>
+        <div class="title-contant">
+            <span><i class="fa fa-eye"></i> <%= film.viwes %></span>
+            <span><i class="fa fa-download"></i> 134</span>
+            <span><i class="fa fa-star"></i> 23</span>
+        </div>
+        <a href="/watch/<%= film._id %>" class="btn float-right my-btn">Watch Film</a>
+        <a href="<%= film.film_url %>" class="btn float-right my-btn">download</a>
+    </div>
+    <div class="col-12 mt-4">
+        <h3 class="parts">Hestory </h3>
+        <p><%= film.hestory %></p>
+    </div>
+    <div class="col-12 mt-4">
+        <h3 class="parts">feedBack</h3>
+        <form action="/" method="GET">
+            <input type="hidden" name="mid" value="<%= film._id %>">
+            <button name="start" type="submit" value="_0_" class="btn btn-danger"><i class="fas fa-thumbs-down"></i></button>
+            <button name="start" type="submit" value="_1_" class="btn btn-primary"><i class="fas fa-star"></i></button>
+        </form>
+    </div>
+    
+    <div class="col-12 mt-4">
+        <h3 class="parts">tags</h3>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+        <span class="badge badge-danger  p-2">tag</span>
+    </div>
+</div>
+
+
+
+<%- include("./components/footer")  %> 
