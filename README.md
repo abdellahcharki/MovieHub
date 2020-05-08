@@ -1,4 +1,4 @@
 # MovieHub
 '''
-web applection with node js expressjs and mongodb
+*web applection with node js expressjs and mongodb
 '''
