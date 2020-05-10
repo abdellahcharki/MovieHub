@@ -1,8 +1,15 @@
 # MovieHub 
 > $ git clone https://github.com/charki-abdellah/MovieHub.git Movie-hub
 
-> $ cd Movie-hub
+```bash
 
-> $ npm install
+$ cd Movie-hub # open dir
 
-> $ npm start or > $ node app.js or >nodemon app.js
+$ npm install # install packeges
+
+$ npm start # start server
+#or 
+$ node app.js 
+#or
+$ nodemon app.js
+```
