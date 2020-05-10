@@ -1,8 +1,8 @@
-# MovieHub 
+# MovieHub
 
-##  requirement
+## requirement
 
-* node js 
+* node js
 * mongodb
 
 ```bash
@@ -12,9 +12,10 @@ $ cd Movie-hub # open dir
 
 $ npm install # install packeges
 
-$ npm start # start server
-#or 
-$ node app.js 
+# start server
+$ npm start
+#or
+$ node app.js
 #or
 $ nodemon app.js
 ```
