@@ -1,6 +1,9 @@
 # MovieHub 
 
+##  requirement
 
+* node js 
+* mongodb
 
 ```bash
 $ git clone https://github.com/charki-abdellah/MovieHub.git Movie-hub
